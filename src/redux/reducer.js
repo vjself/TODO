@@ -60,7 +60,6 @@ export const deleteToDo = id => {
 };
 
 export const editToDo = (id, title, description) => {
-  console.log(id, description, title);
   let data = axios
     .patch(
       `https://practiceapi.devmountain.com/api/tasks/${id}, ${{
